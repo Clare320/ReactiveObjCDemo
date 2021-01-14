@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,9 +14,15 @@
 		BC237AF025596F940061D610 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC237AEF25596F940061D610 /* Assets.xcassets */; };
 		BC237AF325596F940061D610 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC237AF125596F940061D610 /* LaunchScreen.storyboard */; };
 		BC237AF625596F940061D610 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC237AF525596F940061D610 /* main.m */; };
+		BC237B05255BCFE20061D610 /* KitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC237B04255BCFE20061D610 /* KitViewController.m */; };
+		BC68D29625666BB50075FE87 /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC68D29525666BB50075FE87 /* KVOViewController.m */; };
+		BC68D29B25666F360075FE87 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = BC68D29A25666F360075FE87 /* Person.m */; };
+		E3371EC55F7889E7F9E7E5C9 /* Pods_ReactiveObjCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C099844593514371A57D0EC4 /* Pods_ReactiveObjCDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		259A28C3E7582D1501CB8BF8 /* Pods-ReactiveObjCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveObjCDemo.debug.xcconfig"; path = "Target Support Files/Pods-ReactiveObjCDemo/Pods-ReactiveObjCDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		83B9CEDC8CC153D510F4BA66 /* Pods-ReactiveObjCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveObjCDemo.release.xcconfig"; path = "Target Support Files/Pods-ReactiveObjCDemo/Pods-ReactiveObjCDemo.release.xcconfig"; sourceTree = "<group>"; };
 		BC237AE025596F910061D610 /* ReactiveObjCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveObjCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC237AE325596F910061D610 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BC237AE425596F910061D610 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +35,14 @@
 		BC237AF225596F940061D610 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC237AF425596F940061D610 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC237AF525596F940061D610 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BC237B03255BCFE20061D610 /* KitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KitViewController.h; sourceTree = "<group>"; };
+		BC237B04255BCFE20061D610 /* KitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KitViewController.m; sourceTree = "<group>"; };
+		BC68D29425666BB50075FE87 /* KVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOViewController.h; sourceTree = "<group>"; };
+		BC68D29525666BB50075FE87 /* KVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOViewController.m; sourceTree = "<group>"; };
+		BC68D29925666F360075FE87 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		BC68D29A25666F360075FE87 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		BC68D29D2566704C0075FE87 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C099844593514371A57D0EC4 /* Pods_ReactiveObjCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveObjCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +50,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3371EC55F7889E7F9E7E5C9 /* Pods_ReactiveObjCDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42ACBCB940772D5525DE030A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				259A28C3E7582D1501CB8BF8 /* Pods-ReactiveObjCDemo.debug.xcconfig */,
+				83B9CEDC8CC153D510F4BA66 /* Pods-ReactiveObjCDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AA9D4BF6769B4091B86EE531 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C099844593514371A57D0EC4 /* Pods_ReactiveObjCDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BC237AD725596F910061D610 = {
 			isa = PBXGroup;
 			children = (
 				BC237AE225596F910061D610 /* ReactiveObjCDemo */,
 				BC237AE125596F910061D610 /* Products */,
+				42ACBCB940772D5525DE030A /* Pods */,
+				AA9D4BF6769B4091B86EE531 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,19 +95,42 @@
 		BC237AE225596F910061D610 /* ReactiveObjCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BC68D29825666F1C0075FE87 /* Models */,
+				BC68D271256608120075FE87 /* Views */,
 				BC237AE325596F910061D610 /* AppDelegate.h */,
 				BC237AE425596F910061D610 /* AppDelegate.m */,
 				BC237AE625596F910061D610 /* SceneDelegate.h */,
 				BC237AE725596F910061D610 /* SceneDelegate.m */,
 				BC237AE925596F910061D610 /* ViewController.h */,
 				BC237AEA25596F910061D610 /* ViewController.m */,
+				BC237B03255BCFE20061D610 /* KitViewController.h */,
+				BC237B04255BCFE20061D610 /* KitViewController.m */,
+				BC68D29425666BB50075FE87 /* KVOViewController.h */,
+				BC68D29525666BB50075FE87 /* KVOViewController.m */,
 				BC237AEC25596F910061D610 /* Main.storyboard */,
 				BC237AEF25596F940061D610 /* Assets.xcassets */,
 				BC237AF125596F940061D610 /* LaunchScreen.storyboard */,
 				BC237AF425596F940061D610 /* Info.plist */,
 				BC237AF525596F940061D610 /* main.m */,
+				BC68D29D2566704C0075FE87 /* PrefixHeader.pch */,
 			);
 			path = ReactiveObjCDemo;
+			sourceTree = "<group>";
+		};
+		BC68D271256608120075FE87 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BC68D29825666F1C0075FE87 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BC68D29925666F360075FE87 /* Person.h */,
+				BC68D29A25666F360075FE87 /* Person.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC237AF925596F940061D610 /* Build configuration list for PBXNativeTarget "ReactiveObjCDemo" */;
 			buildPhases = (
+				3EB5A6C3D0B3D25E91E3850B /* [CP] Check Pods Manifest.lock */,
 				BC237ADC25596F910061D610 /* Sources */,
 				BC237ADD25596F910061D610 /* Frameworks */,
 				BC237ADE25596F910061D610 /* Resources */,
+				CC5810BDDB8A7861CDE3E428 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,15 +199,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3EB5A6C3D0B3D25E91E3850B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReactiveObjCDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC5810BDDB8A7861CDE3E428 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReactiveObjCDemo/Pods-ReactiveObjCDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReactiveObjCDemo/Pods-ReactiveObjCDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactiveObjCDemo/Pods-ReactiveObjCDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BC237ADC25596F910061D610 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BC237AEB25596F910061D610 /* ViewController.m in Sources */,
+				BC237B05255BCFE20061D610 /* KitViewController.m in Sources */,
+				BC68D29B25666F360075FE87 /* Person.m in Sources */,
 				BC237AE525596F910061D610 /* AppDelegate.m in Sources */,
 				BC237AF625596F940061D610 /* main.m in Sources */,
 				BC237AE825596F910061D610 /* SceneDelegate.m in Sources */,
+				BC68D29625666BB50075FE87 /* KVOViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,11 +392,13 @@
 		};
 		BC237AFA25596F940061D610 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 259A28C3E7582D1501CB8BF8 /* Pods-ReactiveObjCDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YW25G7UN2Y;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(TARGET_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = ReactiveObjCDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,11 +412,13 @@
 		};
 		BC237AFB25596F940061D610 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83B9CEDC8CC153D510F4BA66 /* Pods-ReactiveObjCDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YW25G7UN2Y;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(TARGET_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = ReactiveObjCDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
